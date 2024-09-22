@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +39,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card-item {
+  width: 90px;
+  height: 100px;
+  display: flex;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: center;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.card-item:hover {
+  border: 1px solid gray;
+  box-shadow: 0 0 5px gray;
+}
+
+.card-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 -10px;
+  max-width: 500px;
 }
